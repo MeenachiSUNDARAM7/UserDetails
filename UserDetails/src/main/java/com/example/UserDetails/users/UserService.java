@@ -35,7 +35,7 @@ public class UserService {
             UserEntity existingUser = existingUserOptional.get();
             existingUser.setName(updatedUser.getName());
             existingUser.setEmail(updatedUser.getEmail());
-            existingUser.setPhoneNo(updatedUser.getPhoneNo());
+            existingUser.setPhone_no(updatedUser.getPhone_no());
             existingUser.setGender(updatedUser.getGender());
             return userRepository.save(existingUser);
         } else {
